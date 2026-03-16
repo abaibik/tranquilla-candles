@@ -1,0 +1,10 @@
+<svg width="820" height="180" viewBox="0 0 820 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="820" height="180" rx="36" fill="none"/>
+  <circle cx="88" cy="68" r="28" fill="#D9D2F4"/>
+  <path d="M66 84V121C66 131.493 74.5066 140 85 140H91C101.493 140 110 131.493 110 121V84C110 64.1177 93.8823 48 74 48C54.1177 48 38 64.1177 38 84V121C38 131.493 46.5066 140 57 140H61" stroke="#5D3B87" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 99C66.3659 102.341 73.5312 104.083 81.2917 104.083C89.0522 104.083 96.2174 102.341 102.583 99" stroke="#5D3B87" stroke-width="4" stroke-linecap="round"/>
+  <path d="M86 54C81.1667 59.7222 81.1667 67.2037 86 74.25C90.8333 67.2037 90.8333 59.7222 86 54Z" stroke="#5D3B87" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M57 140C48.1634 140 41 132.837 41 124V87" stroke="#5D3B87" stroke-width="4" stroke-linecap="round"/>
+  <path d="M70 89V119C70 128.389 77.6112 136 87 136C96.3888 136 104 128.389 104 119V89" stroke="#5D3B87" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="154" y="94" fill="#2A2440" font-family="Baskerville, Georgia, serif" font-size="64" font-weight="400" letter-spacing="0.28em">TRANQUILLA</text>
+</svg>

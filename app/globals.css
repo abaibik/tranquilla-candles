@@ -1,26 +1,90 @@
+@config "../tailwind.config.ts";
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f7fc;
+  --foreground: #2a2440;
+
+  --primary: #7e6bc4;
+  --primary-foreground: #ffffff;
+
+  --secondary: #d9d2f4;
+  --secondary-foreground: #2a2440;
+
+  --accent: #c8e6c9;
+  --accent-foreground: #2a2440;
+
+  --cta: #6bc48c;
+  --cta-foreground: #ffffff;
+
+  --card: #ffffff;
+  --card-foreground: #2a2440;
+
+  --muted: #eeeaf8;
+  --muted-foreground: #5c5475;
+
+  --border: #e6e0f3;
+  --input: #e6e0f3;
+  --ring: #7e6bc4;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-cta: var(--cta);
+  --color-cta-foreground: var(--cta-foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+
+  --shadow-card: 0 14px 36px -22px rgba(42, 36, 64, 0.22);
+  --shadow-card-hover: 0 22px 52px -24px rgba(42, 36, 64, 0.28);
+  --shadow-button: 0 12px 24px -18px rgba(107, 196, 140, 0.65);
+
+  --font-heading:
+    Baskerville, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia,
+    serif;
+  --font-sans: "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--border);
+}
+
+html {
+  background: var(--background);
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(217, 210, 244, 0.55), transparent 32%),
+    linear-gradient(180deg, #fcfbff 0%, var(--background) 38%, #f4f1fb 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: rgba(126, 107, 196, 0.2);
+  color: var(--foreground);
 }
