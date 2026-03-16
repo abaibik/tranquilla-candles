@@ -1,7 +1,19 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+
+const display = Cormorant_Garamond({
+  subsets: ["latin"],
+  variable: "--font-heading-display",
+  weight: ["400", "500", "600"],
+});
+
+const sans = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans-ui",
+});
 
 export const metadata: Metadata = {
   title: "Tranquilla",
@@ -20,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className={`${display.variable} ${sans.variable} antialiased`}>
         <div className="relative min-h-screen">
           <Header />
           {children}

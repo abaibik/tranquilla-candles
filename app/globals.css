@@ -61,10 +61,8 @@
   --shadow-card-hover: 0 22px 52px -24px rgba(42, 36, 64, 0.28);
   --shadow-button: 0 12px 24px -18px rgba(107, 196, 140, 0.65);
 
-  --font-heading:
-    Baskerville, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia,
-    serif;
-  --font-sans: "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: var(--font-heading-display);
+  --font-sans: var(--font-sans-ui);
 }
 
 * {
@@ -73,18 +71,29 @@
 
 html {
   background: var(--background);
+  text-rendering: optimizeLegibility;
 }
 
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top, rgba(217, 210, 244, 0.55), transparent 32%),
-    linear-gradient(180deg, #fcfbff 0%, var(--background) 38%, #f4f1fb 100%);
+    radial-gradient(circle at top, rgba(217, 210, 244, 0.62), transparent 26%),
+    radial-gradient(circle at 85% 22%, rgba(200, 230, 201, 0.22), transparent 18%),
+    linear-gradient(180deg, #fdfcff 0%, var(--background) 34%, #f4f1fb 100%);
   color: var(--foreground);
   font-family: var(--font-sans);
+  letter-spacing: -0.01em;
 }
 
 ::selection {
   background: rgba(126, 107, 196, 0.2);
   color: var(--foreground);
+}
+
+h1,
+h2,
+h3,
+[data-display="true"] {
+  font-feature-settings: "liga" 1, "kern" 1;
+  letter-spacing: -0.03em;
 }

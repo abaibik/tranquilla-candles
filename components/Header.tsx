@@ -18,8 +18,8 @@ export function Header() {
   return (
     <header className="sticky top-4 z-50 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="rounded-[24px] border border-[#e6e0f3] bg-white/84 shadow-[0_18px_45px_-34px_rgba(42,36,64,0.3)] backdrop-blur-xl">
-          <div className="flex items-center justify-between gap-6 px-5 py-4 sm:px-7 lg:px-9 lg:py-[1.1rem]">
+        <div className="rounded-[24px] border border-[#e6e0f3] bg-white/86 shadow-[0_22px_46px_-36px_rgba(42,36,64,0.36)] backdrop-blur-xl">
+          <div className="flex items-center justify-between gap-6 px-5 py-4 sm:px-7 lg:px-8 lg:py-[1.05rem]">
             <div className="min-w-0 flex-1 md:flex-none">
               <div className="sm:hidden">
                 <BrandMark compact priority />
@@ -31,7 +31,7 @@ export function Header() {
 
             <nav
               aria-label="Primary"
-              className="hidden items-center gap-8 text-[0.92rem] font-medium tracking-[0.02em] text-muted-foreground md:flex lg:gap-9"
+              className="hidden items-center gap-7 text-[0.9rem] font-medium tracking-[0.01em] text-muted-foreground md:flex lg:gap-8"
             >
               {navigation.map((item) => (
                 <Link
@@ -40,9 +40,9 @@ export function Header() {
                   className="rounded-full px-1 py-1 transition-colors duration-200 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 focus-visible:ring-offset-background"
                 >
                   {item.cart ? (
-                    <span className="inline-flex items-center gap-2.5">
+                    <span className="inline-flex items-center gap-2">
                       <span>{item.label}</span>
-                      <span className="relative inline-flex h-7 w-7 items-center justify-center rounded-full border border-border/80 bg-background/75 text-foreground">
+                      <span className="relative inline-flex h-7 w-7 items-center justify-center rounded-full border border-border/80 bg-background/75 text-foreground shadow-[0_8px_24px_-20px_rgba(42,36,64,0.35)]">
                         <svg
                           aria-hidden="true"
                           viewBox="0 0 24 24"
@@ -97,7 +97,7 @@ export function Header() {
                   <Link
                     key={item.label}
                     href={item.href}
-                    className="rounded-2xl px-4 py-3 text-sm font-medium tracking-[0.03em] text-muted-foreground transition-colors hover:bg-muted/70 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                    className="rounded-2xl px-4 py-3 text-sm font-medium tracking-[0.01em] text-muted-foreground transition-colors hover:bg-muted/70 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                     onClick={() => setIsOpen(false)}
                   >
                     <span className="inline-flex items-center gap-2">
